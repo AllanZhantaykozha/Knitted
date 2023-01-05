@@ -1,0 +1,43 @@
+.root {
+  background-color: #e9e4e4;
+  height: 260px;
+  min-width: 100%;
+  justify-content: space-between;
+  display: flex;
+
+  padding-left: 287px;
+  padding-right: 287px;
+  padding-top: 50px;
+
+  .main_link {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+
+    text-transform: uppercase;
+
+    color: #989898;
+
+    cursor: pointer;
+    padding-bottom: 10px;
+  }
+
+  .link {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+
+    color: #989898;
+
+    cursor: pointer;
+    padding-bottom: 10px;
+  }
+
+  .logolink {
+    justify-content: space-between;
+    display: flex;
+    cursor: pointer;
+  }
+}

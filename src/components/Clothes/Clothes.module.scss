@@ -1,0 +1,33 @@
+.root {
+  width: 359px;
+  height: 506px;
+  margin-right: 35px;
+
+  cursor: pointer;
+
+  .img {
+    width: 359px;
+    height: 359px;
+  }
+
+  .title {
+    margin-top: 10px;
+
+    width: 237px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+
+    color: #000000;
+  }
+
+  .price {
+    margin-top: 10px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+
+    color: #000000;
+  }
+}

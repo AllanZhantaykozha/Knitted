@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:regular);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900);
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  font-family: 'Montserrat';
+}
+
+body {
+  height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+hr {
+  border-width: 1px;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  margin-left: 98px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.title_sweater {
+  margin-left: 98px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 52px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+
+  color: #000000;
+}
