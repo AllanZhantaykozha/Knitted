@@ -1,16 +1,16 @@
-import React from 'react';
-import axios from 'axios';
+import React from "react";
+import axios from "axios";
 
-import { Routes, Route, useParams } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
+import { Routes, Route, useParams } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
 
-import { Card } from './pages/Card';
-import { Home } from './pages/Home';
-import { Detail } from './pages/Detail';
+import { Card } from "./pages/Card";
+import { Home } from "./pages/Home";
+import { Detail } from "./pages/Detail";
 
-import { addItems } from './redux/slices/itemsSlice';
-import { Navbar } from './components/Navbar';
-import { addDetailToCard } from './redux/slices/cardSlice';
+import { addItems } from "./redux/slices/itemsSlice";
+import { Navbar } from "./components/Navbar";
+import { addDetailToCard } from "./redux/slices/cardSlice";
 
 function App() {
   const dispatch = useDispatch();
@@ -25,10 +25,12 @@ function App() {
   React.useEffect(() => {
     setIsLoading(true);
 
-    axios.get(`https://63a58fcef8f3f6d4abf9637a.mockapi.io/items?type=${select}`).then((res) => {
-      dispatch(addItems(res.data));
-      setIsLoading(false);
-    });
+    axios
+      .get(`https://63a58fcef8f3f6d4abf9637a.mockapi.io/items?type=${select}`)
+      .then((res) => {
+        dispatch(addItems(res.data));
+        setIsLoading(false);
+      });
   }, [select]);
 
   return (
